@@ -14,6 +14,7 @@ import {
   View,
   Text,
   StatusBar,
+  ImageBackground
 } from 'react-native';
 
 import {
@@ -32,39 +33,16 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
+
+          <ImageBackground
+              accessibilityRole={'image'}
+              source={require('./app/Images/CRRLogo.jpg')}
+              style={styles.background}
+              imageStyle={styles.logo}>
+            </ImageBackground>
+
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
+            
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -90,6 +68,22 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
+    color: Colors.black,
+  },
+  background: {
+    paddingBottom: 140,
+    paddingTop: 80,
+    paddingHorizontal: 32,
+    backgroundColor: Colors.lighter,
+  },
+  logo: {
+    overflow: 'visible',
+    resizeMode: 'cover',
+  },
+  text: {
+    fontSize: 40,
+    fontWeight: '600',
+    textAlign: 'center',
     color: Colors.black,
   },
   sectionDescription: {
