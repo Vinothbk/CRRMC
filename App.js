@@ -33,16 +33,13 @@ const App: () => React$Node = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-
-          <ImageBackground
+          <View style={styles.body}>
+            <ImageBackground
               accessibilityRole={'image'}
               source={require('./app/Images/CRRLogo.jpg')}
               style={styles.background}
               imageStyle={styles.logo}>
             </ImageBackground>
-
-          <View style={styles.body}>
-            
           </View>
         </ScrollView>
       </SafeAreaView>

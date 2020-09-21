@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "55057983644",
+    "firebase_url": "https://crrmc-4c8e8.firebaseio.com",
+    "project_id": "crrmc-4c8e8",
+    "storage_bucket": "crrmc-4c8e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55057983644:android:5a97e64509d9156de76559",
+        "android_client_info": {
+          "package_name": "com.crrmc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55057983644-21jj2v58o2vt5s72jkb5pbh2n931lks1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDSrKdqpxlfKuv1zzhuxe8J5Bk6Elsa4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55057983644-21jj2v58o2vt5s72jkb5pbh2n931lks1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
