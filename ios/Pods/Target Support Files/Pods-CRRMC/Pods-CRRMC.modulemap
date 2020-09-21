@@ -1,0 +1,6 @@
+module Pods_CRRMC {
+  umbrella header "Pods-CRRMC-umbrella.h"
+
+  export *
+  module * { export * }
+}

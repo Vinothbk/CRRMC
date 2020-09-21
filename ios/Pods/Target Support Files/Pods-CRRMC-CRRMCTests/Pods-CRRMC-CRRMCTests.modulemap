@@ -1,0 +1,6 @@
+module Pods_CRRMC_CRRMCTests {
+  umbrella header "Pods-CRRMC-CRRMCTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
